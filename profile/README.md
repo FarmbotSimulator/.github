@@ -29,8 +29,6 @@ class w_A borderless
 class worlds,w_A brightBlue
 click w_B "https://github.com/brianmechanisms/concepts" _blank
 
-
-
 subgraph robotsPrivate[ ]
     rPr_A[[Private Robots<br/> ]]
     rPr_B[github.com/FarmbotSimulator/robotsprivate]
@@ -125,6 +123,25 @@ class billingServer,bs_A green
 
 webApp<---->farmbotProxy
 farmbotProxy<--Rest API-->billingServer
+
+
+
+
+subgraph deskopAppCode[ ]
+    dAC_A[[Deskop App<br/> ]]
+    dAC_B[github.com/FarmbotSimulator/farmbotSimulator]
+end
+class deskopAppCode,dAC_A green
+class dAC_A borderless
+webAppCode-->deskopAppCode-->downloads-->site
+
+subgraph downloads[ ]
+    dn_A[[Downloads<br/> ]]
+    dn_B[farmbotsimulator.github.io/downloads]
+end
+click dn_B "https://farmbotsimulator.github.io/downlods" _blank
+class dn_A borderless
+class downloads,dn_A green
 ```
 
 ```mermaid
