@@ -33,7 +33,7 @@ click w_B "https://github.com/brianmechanisms/concepts" _blank
 
 subgraph robotsPrivate[ ]
     rPr_A[[Private Robots<br/> ]]
-    rPr_B[farmbotsimulator.github.io/web]
+    rPr_B[github.com/FarmbotSimulator/robotsprivate]
 end
 class rPr_A borderless
 click rPr_B "https://github.com/FarmbotSimulator/robotsprivate" _blank
