@@ -66,7 +66,7 @@ subgraph webAppCode[ ]
     wAC_B[github.com/FarmbotSimulator/farmbotSimulator]
 end
 class webAppCode,wAC_A brightBlue
-click rPr_B "https://github.com/FarmbotSimulator/farmbotSimulator" _blank
+click wAC_B "https://github.com/FarmbotSimulator/farmbotSimulator" _blank
 class wAC_A borderless
 webAppCode-->webApp
 
@@ -74,7 +74,7 @@ subgraph webAppAssets[ ]
     wAA_A[[webAppAssets<br/> ]]
     wAA_B[farmbotsimulator.github.io/web]
 end
-click rPr_B "https://farmbotsimulator.github.io/web" _blank
+click wAA_B "https://farmbotsimulator.github.io/web" _blank
 class wAA_A borderless
 class webAppAssets,wAA_A gray
 
