@@ -65,7 +65,7 @@ subgraph worlds[ ]
     w_B[Robot models]
 end
 class w_A borderless
-click w_B "https://github.com/brianmechanisms/concepts" "Robot models"
+click w_B "https://github.com/brianmechanisms/concepts" _blank
 
 subgraph site[ ]
     s_A[[Site<br/> ]]
