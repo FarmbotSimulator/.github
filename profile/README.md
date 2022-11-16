@@ -40,7 +40,7 @@ click rPr_B "https://github.com/FarmbotSimulator/robotsprivate" _blank
 class robotsPrivate,rPr_A brightBlue
 subgraph robotsPublic[ ]
     rPu_A[[Public Robots<br/> ]]
-    rPu_B[farmbotsimulator.github.io/web]
+    rPu_B[github.com/FarmbotSimulator/robots]
 end
 click rPu_B "https://github.com/FarmbotSimulator/robots" _blank
 class rPu_A borderless
@@ -59,7 +59,7 @@ subgraph webApp[ ]
 end
 class pU_A borderless
 class webApp,pU_A gray
-click rA_B "https://farmbotsimulator.github.io/app" _blank
+click pU_B "https://farmbotsimulator.github.io/app" _blank
 
 subgraph webAppCode[ ]
     wAC_A[[webApp Code<br/> ]]
@@ -82,7 +82,7 @@ subgraph webAppAssetsCode[ ]
     wAAC_A[[webAppAssets Code<br/> ]]
     wAAC_B[github.com/FarmbotSimulator/web]
 end
-click wAAC_B "https://farmbotsimulator.github.io/web" _blank
+click wAAC_B "https://github.com/FarmbotSimulator/web" _blank
 class wAAC_A borderless
 class webAppAssetsCode red
 webAppAssetsCode-->webAppAssets
