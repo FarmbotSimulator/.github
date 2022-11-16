@@ -11,6 +11,7 @@ We have implemented the following features:
 - [ ] Plant growth
 - [ ] Day and night simulation
 
+## Project Structure
 ```mermaid
 flowchart TB
 classDef borderless stroke-width:0px
