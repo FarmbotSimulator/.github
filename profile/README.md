@@ -128,6 +128,7 @@ end
 click B3 "https://github.com/FarmbotSimulator/farmbotProxy" _blank
 class A3 borderless
 class farmbotProxy,A3 red
+farmbotProxy<-->farmbotServer
 
 subgraph billingServer[ ]
     bs_A[[Billing Server]]
@@ -178,5 +179,6 @@ click fS_B "https://my.farm.bot/" _blank
 class fS_A borderless
 class farmbotServer,fS_A yellow
 brianMechanisms<-->farmbotServer
+
 
 ```
