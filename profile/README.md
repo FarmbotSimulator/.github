@@ -23,6 +23,19 @@ classDef red fill:#f00, color:#fff
 classDef green fill:#111, color:#fff
 classDef yellow fill:#fcba03, color:#fff
 
+subgraph Legend[Legend]
+    Legend1[Public Site]
+    Legend2[Public Repo]
+    Legend3[Private Repo]
+    Legend4[Not implemented]
+    Legend5[External]
+end
+class Legend1 gray
+class Legend2 red
+class Legend3 brightBlue
+class Legend4 green
+class Legend5 yellow
+
 subgraph worlds[ ]
     w_A[[worlds<br/> ]]
     w_B[Robot models]
@@ -166,28 +179,4 @@ class fS_A borderless
 class farmbotServer,fS_A yellow
 brianMechanisms<-->farmbotServer
 
-```
-
-```mermaid
-flowchart TB
-classDef darkBlue fill:#00008B, color:#fff
-classDef brightBlue fill:#6082B6, color:#fff
-classDef gray fill:#62524F, color:#fff
-classDef gray2 fill:#4F625B, color:#fff
-classDef red fill:#f00, color:#fff
-classDef green fill:#111, color:#fff
-classDef yellow fill:#fcba03, color:#fff
-
-subgraph Legend[Legend]
-    Legend1[Public Site]
-    Legend2[Public Repo]
-    Legend3[Private Repo]
-    Legend4[Not implemented]
-    Legend5[External]
-end
-class Legend1 gray
-class Legend2 red
-class Legend3 brightBlue
-class Legend4 green
-class Legend5 yellow
 ```
