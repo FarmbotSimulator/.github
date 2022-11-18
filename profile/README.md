@@ -21,6 +21,7 @@ classDef gray fill:#62524F, color:#fff
 classDef gray2 fill:#4F625B, color:#fff
 classDef red fill:#f00, color:#fff
 classDef green fill:#111, color:#fff
+classDef yellow fill:#fcba03, color:#fff
 
 subgraph worlds[ ]
     w_A[[worlds<br/> ]]
@@ -122,7 +123,7 @@ end
 class bs_A borderless
 class billingServer,bs_A green
 
-webApp<---->farmbotProxy
+
 farmbotProxy<--Rest API-->billingServer
 
 
@@ -143,6 +144,28 @@ end
 click dn_B "https://farmbotsimulator.github.io/downlods" _blank
 class dn_A borderless
 class downloads,dn_A green
+
+
+subgraph brianMechanisms[ ]
+    BM_A[[Brian Mechanisms<br/> ]]
+    BM_B[Simulator Controllers]
+end
+click BM_B "https://github.com/FarmbotSimulator/brian-mechanisms" _blank
+class BM_A borderless
+class brianMechanisms,BM_A red
+brianMechanisms-->webAppCode
+brianMechanisms<---->farmbotProxy
+
+
+subgraph farmbotServer[ ]
+    fS_A[[Farmbot Server<br/> ]]
+    fS_B[my.farm.bot]
+end
+click fS_B "https://my.farm.bot/" _blank
+class fS_A borderless
+class farmbotServer,fS_A yellow
+brianMechanisms<-->farmbotServer
+
 ```
 
 ```mermaid
@@ -153,15 +176,18 @@ classDef gray fill:#62524F, color:#fff
 classDef gray2 fill:#4F625B, color:#fff
 classDef red fill:#f00, color:#fff
 classDef green fill:#111, color:#fff
+classDef yellow fill:#fcba03, color:#fff
 
 subgraph Legend[Legend]
     Legend1[Public Site]
     Legend2[Public Repo]
     Legend3[Private Repo]
     Legend4[Not implemented]
+    Legend5[External]
 end
 class Legend1 gray
 class Legend2 red
 class Legend3 brightBlue
 class Legend4 green
+class Legend5 yellow
 ```
